@@ -1,3 +1,15 @@
 {
-  "extends": "@sanity/eslint-config-studio"
+  "parser": "@babel/eslint-parser",  // Use the Babel parser
+  "env": {
+    "browser": true,                // If you're working with browser code
+    "node": true                    // If you're working with Node.js code
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"   // Use Prettier for code formatting
+  ],
+  "plugins": [],
+  "rules": {
+    // Define your ESLint rules here
+  }
 }
